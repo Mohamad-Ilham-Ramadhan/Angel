@@ -1,0 +1,221 @@
+@import 'components_variables';
+
+@banner-text-color: #fff;
+@header-top-fontSz: 13px;
+@header-top-right-padding:10px 15px;
+@logo-fontSz: 3em;
+.banner {
+   width:100%;
+   min-height: 800px;
+   background: url('../img/3.jpg') no-repeat center top;
+   background-size:cover;
+   padding-top:3em;
+   padding-bottom:3em;
+
+   a{
+      color: @banner-text-color;
+      text-decoration:none;
+   }
+   ul {
+      list-style-type:none;
+   }
+}
+
+.banner-less {
+   .banner;
+   min-height:225px;
+}
+.header-top{
+   clear:both;
+}
+.header-top-left{
+   float:left;
+   font-size: @header-top-fontSz;
+
+   .cart-box{
+      a{
+         display:block;
+         padding:5px 10px;
+         color:#000;
+         background-color:@brand-color;
+         text-decoration:none;
+      }
+   }
+
+   .empty{
+      margin-top:5px;
+      text-align: right;
+      a:hover{
+         text-decoration:underline;
+      }
+   }
+}
+
+.header-top-right{
+   float:right;
+   font-size: @header-top-fontSz;
+
+   .currency{
+      display:inline-block;
+      padding:@header-top-right-padding;
+      border-right:1px solid #333;
+      cursor:pointer;
+      color:@banner-text-color;
+      .carrat{
+         margin-left:10px;
+      }
+
+      .currency-list{
+         position:absolute;
+         padding-left:0px;
+         margin-left: -30px;
+         display:none;
+
+         .item{
+            color:#000;
+            padding:5px 25px;
+            background-color:@brand-color;
+            text-transform:uppercase;
+            font-size: @header-top-fontSz - 1;
+         }
+
+         .item:first-child{
+            border-bottom:1px solid @brand-color * 0.9;
+         }
+      }
+   }
+
+   .account{
+      display:inline-block;
+      padding:@header-top-right-padding;
+      border-right:1px solid #333;
+      text-transform: uppercase;
+
+      a:hover{
+         color:@brand-color;
+      }
+   }
+
+   .search{
+      display:inline-block;
+      color:@banner-text-color;
+      #search-box{
+         display: none;
+         position: absolute;
+         top: 7px;
+         left: -410%;
+      }
+      .search-btn{
+         cursor:pointer;
+         background-color:#000;
+         padding:@header-top-right-padding;
+      }
+   }
+
+}
+
+.header-bottom{
+   .logo{
+      h1 a{
+         font-size:@logo-fontSz;
+         text-transform:uppercase;
+         .c-l{
+            color:@brand-color;
+         }
+      }
+   }//logo
+
+   .header-bottom-nav{
+      float:right;
+      margin-top: 40px;
+
+      .nav-list{
+         position:relative;
+         padding:0;
+         margin:0;
+         .item{
+            display:block;
+            float:left;
+
+            >a{
+               display:block;
+               padding:10px 20px;
+               font-size:1.2em;
+               text-transform:uppercase;
+               letter-spacing:5px;
+               transition: linear .2s;
+            }
+            a:hover{
+               background-color:@brand-color;
+               color: @brand-color * 0.3;
+            }
+            .megamenu{
+               display:none;
+               position:absolute;
+               background-color:#fff;
+               width:100%;
+               padding: 20px 35px;
+               left:0;
+               z-index: 1;
+               box-shadow: 0 1px 3px 1px rgba(0,0,0, 0.5);
+               .h-menu-title{
+                  text-align:left;
+                  color:#000;
+                  text-transform: uppercase;
+               }
+               .h-menu-product{
+                  display:block;
+                  padding:0;
+                  margin:0;
+                  li {
+                     margin-bottom:20px;
+                  }
+                  .pull-left{
+                     margin-right:10px;
+
+                     h6 a, .pro-cat a {
+                        color: @text-strong-grey;
+                        &:hover{
+                           color:red;
+                           background:none;
+                        }
+                     }
+                     .pro-cat {
+                        font-size: 11px;
+                        display:block;
+                        margin-top: -5px;
+                     }
+
+                     .pro-price{
+                        margin-top:10px;
+                        display:block;
+                     }
+                  }
+               }
+               .h-menu {
+                  display:block;
+                  padding:0;
+                  margin:0;
+                  a{
+                     text-align:left;
+                     font-size: 13px;
+                     display:block;
+                     color:@text-strong-grey;
+                     margin-bottom: 10px;
+
+                     &:hover{
+                        background:#fff;
+                        color:red;
+                     }
+                  }
+               }
+            }
+            &:hover > .megamenu{
+               display:block;
+            }
+
+         }
+      }
+
+   }
+}

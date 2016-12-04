@@ -1,0 +1,14 @@
+.greeting {
+  margin: 50px 0;
+}
+.greeting h2 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+.greeting p {
+  color: #999;
+  font-size: 18px;
+}

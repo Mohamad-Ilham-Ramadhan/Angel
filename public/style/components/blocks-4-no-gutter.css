@@ -1,0 +1,23 @@
+.blocks-4-no-gutter .block-photo .photo-img {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.blocks-4-no-gutter .block-photo .photo-caption {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: rgba(249, 217, 190, 0);
+  transition: 0.25s linear;
+  line-height: 17em;
+}
+.blocks-4-no-gutter .block-photo:hover .photo-caption {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(249, 217, 190, 0.64);
+}

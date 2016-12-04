@@ -1,0 +1,72 @@
+.login {
+  padding: 50px 0;
+}
+.login h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #000;
+}
+.login label {
+  display: block;
+  font-size: 14px;
+  color: #999;
+}
+.login input:not([type="submit"]) {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  border: #999 1px solid;
+  margin-bottom: 20px;
+}
+.login input[type="submit"] {
+  padding: 10px 20px;
+  color: #000;
+  font-size: 17px;
+  background: #F9D9BE;
+  border: none;
+  border-radius: 2px;
+  transition: all ease .25s;
+}
+.login input[type="submit"]:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.login .sign-up .five-in {
+  border-radius: 50%;
+  border: 3px solid #f9d9be;
+  background: #fff;
+  position: absolute;
+  top: 1%;
+  padding-top: 20px;
+  right: 8%;
+  width: 100px;
+  height: 100px;
+}
+.login .sign-up .five-in h3 {
+  margin: 0;
+  text-align: center;
+}
+.login .sign-up .five-in p {
+  color: #f02b63;
+  text-align: center;
+}
+.login .sign-up .create {
+  display: block;
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  bottom: 0;
+  color: #000;
+  background: #f9d9be;
+  padding: 10px 0;
+  border-radius: 5px;
+  transition: all ease .25s;
+}
+.login .sign-up .create:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}

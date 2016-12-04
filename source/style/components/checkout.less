@@ -1,0 +1,100 @@
+@import 'components_variables';
+
+.checkout {
+   padding-top: 80px;
+   padding-bottom: 120px;
+   .checkout-items{
+      .items-cart h2 {
+         margin:0;
+      }
+      .items{
+         margin-top:50px;
+
+         .item-name{
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+         }
+         .item-model{
+            margin-top: -3px;
+            font-size: 12px;
+         }
+         .qty{
+            margin-top: 30px;
+            width: 30%;
+         }
+         .item-service-charges{
+            margin-top: 60px;
+            font-size: 16px;
+         }
+         .delivered-time{
+            float: right;
+            font-size: 16px;
+            color: @text-soft-grey;
+         }
+         .remove{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #60a6db;
+            color: #fff;
+            cursor:pointer;
+            padding: 5px;
+         }
+      }
+
+      .items-cart-total{
+         padding-left: 120px;
+         .continue{
+            display:block;
+            padding:10px;
+            font-size: 16px;
+            text-align:center;
+            color:#000;
+            background-color:@brand-color;
+         }
+         h3{
+            font-size:18px;
+            text-transform:uppercase;
+         }
+         .price-total{
+            margin-bottom:20px;
+            .calculated-total{
+               span{
+                  font-size:16px;
+               }
+               padding-top:15px;
+               border-top:1px solid @text-strong-grey;
+            }
+            span{
+               display:inline-block;
+               width:50%;
+               font-size:13px;
+            }
+         }
+         .order {
+            .continue;
+         }
+         .coupons{
+            margin: 20px 0;
+            span{
+               text-transform: uppercase;
+               color: @text-soft-grey;
+               font-size: 14px;
+            }
+            .apply-coupons{
+               display:inline-block;
+               padding:10px;
+               margin-left: 30px;
+               font-size:12px;
+               background:@brand-color;
+               color:#000;
+            }
+         }
+         .login{
+            color:#000;
+         }
+      }
+   }
+}

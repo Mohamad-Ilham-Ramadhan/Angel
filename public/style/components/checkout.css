@@ -1,0 +1,99 @@
+.checkout {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.checkout .checkout-items .items-cart h2 {
+  margin: 0;
+}
+.checkout .checkout-items .items {
+  margin-top: 50px;
+}
+.checkout .checkout-items .items .item-name {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.checkout .checkout-items .items .item-model {
+  margin-top: -3px;
+  font-size: 12px;
+}
+.checkout .checkout-items .items .qty {
+  margin-top: 30px;
+  width: 30%;
+}
+.checkout .checkout-items .items .item-service-charges {
+  margin-top: 60px;
+  font-size: 16px;
+}
+.checkout .checkout-items .items .delivered-time {
+  float: right;
+  font-size: 16px;
+  color: #999;
+}
+.checkout .checkout-items .items .remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #60a6db;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+.checkout .checkout-items .items-cart-total {
+  padding-left: 120px;
+}
+.checkout .checkout-items .items-cart-total .continue {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  background-color: #F9D9BE;
+}
+.checkout .checkout-items .items-cart-total h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.checkout .checkout-items .items-cart-total .price-total {
+  margin-bottom: 20px;
+}
+.checkout .checkout-items .items-cart-total .price-total .calculated-total {
+  padding-top: 15px;
+  border-top: 1px solid #777;
+}
+.checkout .checkout-items .items-cart-total .price-total .calculated-total span {
+  font-size: 16px;
+}
+.checkout .checkout-items .items-cart-total .price-total span {
+  display: inline-block;
+  width: 50%;
+  font-size: 13px;
+}
+.checkout .checkout-items .items-cart-total .order {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  background-color: #F9D9BE;
+}
+.checkout .checkout-items .items-cart-total .coupons {
+  margin: 20px 0;
+}
+.checkout .checkout-items .items-cart-total .coupons span {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 14px;
+}
+.checkout .checkout-items .items-cart-total .coupons .apply-coupons {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 12px;
+  background: #F9D9BE;
+  color: #000;
+}
+.checkout .checkout-items .items-cart-total .login {
+  color: #000;
+}

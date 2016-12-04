@@ -1,0 +1,74 @@
+footer {
+  padding: 50px 0 100px 0;
+}
+.newsletter {
+  margin-bottom: 50px;
+}
+.newsletter h3 {
+  color: #000;
+  font-size: 50px;
+}
+.newsletter p {
+  color: #999;
+  font-size: 18px;
+}
+.newsletter .newsletter-form {
+  width: 50%;
+  margin-top: 30px;
+}
+.newsletter .newsletter-form .newsletter-input {
+  padding: 10px;
+  border: 1px #000 solid;
+  width: 60%;
+}
+.newsletter .newsletter-form .newsletter-input:focus {
+  outline: none;
+}
+.newsletter .newsletter-form .newsletter-submit {
+  text-transform: uppercase;
+  background-color: #F9D9BE;
+  outline: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+.footer-nav-wrapper .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.footer-nav-wrapper .footer-nav ul li {
+  display: block;
+  float: left;
+}
+.footer-nav-wrapper .footer-nav ul li a {
+  display: block;
+  font-weight: bold;
+  padding: 1em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.footer-nav-wrapper .social {
+  top: 10px;
+  position: relative;
+  display: block;
+  float: right;
+}
+.footer-nav-wrapper .social span {
+  display: block;
+  float: left;
+  font-size: 39px;
+}
+.footer-nav-wrapper .social span a {
+  padding: 20px;
+}
+.footer-nav-wrapper .social span i {
+  color: #000;
+}
+.copyright {
+  font-size: 16px;
+  margin-top: 30px;
+}

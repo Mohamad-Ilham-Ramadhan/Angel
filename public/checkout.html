@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Project-A</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/app.min.css">
+
+   <style>
+      #map{
+         width:100%;
+         height:400px;
+         background-color:grey;
+      }
+   </style>
+</head>
+<body>
+   <header class="banner-less">
+      <div class="container">
+
+         <div class="header-top">
+
+            <div class="header-top-left">
+               <div class="cart-box">
+                  <a href="javascript:void(0)">
+                     Cart: $0.00 (0 items)
+                     <span><img src="img/bag.png" alt="bag"></span>
+                  </a>
+               </div>
+               <p class="empty">
+                  <a href="javascript:void(0)">
+                     Empty Cart
+                  </a>
+               </p>
+            </div><!-- header-top-left -->
+
+            <div class="header-top-right">
+
+               <div class="currency">
+                  <span class="selected">$US</span>
+                  <span class="caret"></span>
+                  <ul class="currency-list">
+                     <li class="item">dollar</li>
+                     <li class="item">euro</li>
+                  </ul>
+               </div>
+
+               <div class="account">
+                  <a href="javascript:void(0)">
+                     <span><i class="glyphicon glyphicon-user"></i></span>
+                     <span>my account</span>
+                  </a>
+               </div>
+
+               <div class="search">
+                  <form action="">
+                     <input type="text" id="search-box" placeholder="enter your search term">
+                     <label class="search-btn" for="search-box"><span><i class="glyphicon glyphicon-search"></i></span></label>
+                  </form>
+               </div>
+
+            </div><!-- header-top-right -->
+
+            <div class="clearfix"></div>
+         </div><!-- header-top -->
+
+         <div class="header-bottom">
+
+            <div class="logo">
+               <h1>
+                  <a href="index.html"><span class="c-l">w</span>atches</a>
+               </h1>
+            </div>
+
+            <div class="header-bottom-nav">
+               <ul class="nav-list">
+                  <li class="item">
+                     <a href="javascript:void(0)">mens</a>
+                     <div class="megamenu">
+                        <div class="row">
+                           <div class="col-xs-3">
+                              <h4 class="h-menu-title">Mens</h4>
+                              <ul class="h-menu">
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Blazers</a></li>
+                                 <li><a href="">Suits</a></li>
+                                 <li><a href="">Trousers</a></li>
+                                 <li><a href="">Jeans</a></li>
+                                 <li><a href="">Shirt</a></li>
+                                 <li><a href="">Sweatshirt & hoddie</a></li>
+                                 <li><a href="">Swim Wear</a></li>
+                                 <li><a href="">Accessories</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-xs-3">
+                              <h4 class="h-menu-title">Women</h4>
+                              <ul class="h-menu">
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Outwear</a></li>
+                                 <li><a href="">Dresses</a></li>
+                                 <li><a href="">Handbag</a></li>
+                                 <li><a href="">Trousers</a></li>
+                                 <li><a href="">Jeans</a></li>
+                                 <li><a href="">T-Shirt</a></li>
+                                 <li><a href="">Shoes</a></li>
+                                 <li><a href="">Coats</a></li>
+                                 <li><a href="">Accessories</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-xs-6">
+                              <h4 class="h-menu-title">Women</h4>
+                              <ul class="h-menu-product">
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p1.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+
+                                 </li>
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p2.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+                                 </li>
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p3.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="item">
+                     <a href="javascript:void(0)">woman</a>
+                     <div class="megamenu">
+                        <div class="row">
+                           <div class="col-xs-3">
+                              <h4 class="h-menu-title">Mens</h4>
+                              <ul class="h-menu">
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Blazers</a></li>
+                                 <li><a href="">Suits</a></li>
+                                 <li><a href="">Trousers</a></li>
+                                 <li><a href="">Jeans</a></li>
+                                 <li><a href="">Shirt</a></li>
+                                 <li><a href="">Sweatshirt & hoddie</a></li>
+                                 <li><a href="">Swim Wear</a></li>
+                                 <li><a href="">Accessories</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-xs-3">
+                              <h4 class="h-menu-title">Women</h4>
+                              <ul class="h-menu">
+                                 <li><a href="">Watches</a></li>
+                                 <li><a href="">Outwear</a></li>
+                                 <li><a href="">Dresses</a></li>
+                                 <li><a href="">Handbag</a></li>
+                                 <li><a href="">Trousers</a></li>
+                                 <li><a href="">Jeans</a></li>
+                                 <li><a href="">T-Shirt</a></li>
+                                 <li><a href="">Shoes</a></li>
+                                 <li><a href="">Coats</a></li>
+                                 <li><a href="">Accessories</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-xs-6">
+                              <h4 class="h-menu-title">Women</h4>
+                              <ul class="h-menu-product">
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p1.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+
+                                 </li>
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p2.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+                                 </li>
+                                 <li class="clearfix">
+                                    <div class="pull-left">
+                                       <a href="">
+                                          <img src="img/p3.jpg" alt="">
+                                       </a>
+                                    </div>
+                                    <div class="pull-left">
+                                       <h6><a href="">Denim Shirt</a></h6>
+                                       <span class="pro-cat">
+                                          <small><a href="">Watches</a></small>
+                                       </span>
+                                       <span class="pro-price">
+                                          29.99$
+                                       </span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="item"><a href="javascript:void(0)">brands</a></li>
+                  <li class="item"><a href="javascript:void(0)">sale</a></li>
+                  <li class="item"><a href="javascript:void(0)">news</a></li>
+               </ul>
+               <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+         </div><!-- header-bottom -->
+
+      </div><!-- container -->
+
+   </header><!-- banner -->
+
+   <main>
+      <div class="checkout">
+         <div class="container">
+            <div class="checkout-items">
+               <div class="row">
+                  <div class="items-cart col-md-8">
+                     <h2>My Shopping Bag <span class="items-total">(2)</span></h2>
+
+                     <div class="items">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img class="img-responsive" src="img/m3.jpg" alt="item-1">
+                           </div>
+                           <div class="col-md-9">
+                              <h3 class="item-name">Mountain Hopper(XS R043)</h3>
+                              <p class="item-model">MODEL NO: 3578</p>
+                              <p class="qty clearfix"><small><span class="pull-left">Size : 5</span><span class="pull-right">Qty : 1</span></small></p>
+                              <p class="item-service-charges">Servis Charges :  Rs.100.00</p>
+                              <p class="delivered-time clearfix">Delivered in 2-3 bussiness days</p>
+                              <span class="remove"><i class="glyphicon glyphicon-remove"></i></span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="items">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img class="img-responsive" src="img/m4.jpg" alt="item-1">
+                           </div>
+                           <div class="col-md-9">
+                              <h3 class="item-name">Mountain Hopper(XS R043)</h3>
+                              <p class="item-model">MODEL NO: 3578</p>
+                              <p class="qty clearfix"><small><span class="pull-left">Size : 5</span><span class="pull-right">Qty : 1</span></small></p>
+                              <p class="item-service-charges">Servis Charges :  Rs.100.00</p>
+                              <p class="delivered-time clearfix">Delivered in 2-3 bussiness days</p>
+                              <span class="remove"><i class="glyphicon glyphicon-remove"></i></span>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="items-cart-total col-md-4">
+                     <a href="" class="continue">Continue to basket</a>
+                     <h3>Price Details</h3>
+                     <div class="price-total">
+                        <p class="total"><span>Total</span><span class="total-num">6200.00</span></p>
+                        <p class="discount"><span>Discount</span><span class="discount-percentage">---</span></p>
+                        <p class="d-charges"><span>Delivery Changes</span><span class="d-charges-num">150.00</span></p>
+                        <p class="calculated-total"><span>TOTAL</span><span class="calculated-total-num">6350.00</span></p>
+                     </div>
+                     <a href="" class="order">Place Order</a>
+                     <h3>Options</h3>
+                     <div class="coupons">
+                        <span>coupons</span>
+                        <span><a href="" class="apply-coupons">Apply Coupons</a></span>
+                     </div>
+                     <p><span><a href="" class="login">log in</a></span> to use accounts - linked coupon</p>
+                  </div><!-- items cart total -->
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="map">
+      </div>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="newsletter text-center">
+            <h3>Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sint consequatur labore dolore itaque expedita quibusdam, consequuntur odio eum quam?s</p>
+
+            <form action="" class="newsletter-form center-block">
+               <input type="text" class="newsletter-input">
+               <button class="newsletter-submit" type="submit">subscribe</button>
+            </form>
+         </div><!-- Newsletter -->
+         <div class="footer-nav-wrapper">
+            <div class="row">
+               <div class="col-md-7">
+                  <nav class="footer-nav clearfix">
+                     <ul>
+                        <li><a href="">privacy</a></li>
+                        <li><a href="">term</a></li>
+                        <li><a href="">shop</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="col-md-5">
+                  <div class="social">
+                     <span><a href=""><i class="fa fa-instagram"></i></a></span>
+                     <span><a href=""><i class="fa fa-facebook"></i></a></span>
+                     <span><a href=""><i class="fa fa-twitter"></i></a></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="copyright">
+            <p class="text-center">&#xA9; 2016 Watches. All Right Reserved</p>
+         </div>
+
+      </div>
+   </footer>
+   <script>
+      var map;
+
+      // Create a new blank array for all the listing markers.
+      var markers = [];
+      function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: {lat: 40.7413549, lng: -73.9980244}
+         });
+         // These are the real estate listing that will be shown to the user.
+         // Normally we'd have this in a database instead.
+         var locations = [
+            {title: 'Park Ave Penthouse', location: {lat: 40.7713024, lng: -73.9632393}},
+            {title: 'Chelsea Loft', location: {lat: 40.7444883, lng: -73.9949465}},
+            {title: 'Union Square Open Floor Plan', location: {lat: 40.7347062, lng: -73.9895759}},
+            {title: 'East Village Hip Studio', location: {lat: 40.7281777, lng: -73.984377}},
+            {title: 'TriBeCa Artsy Bachelor Pad', location: {lat: 40.7195264, lng: -73.0089934}},
+            {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}}
+         ];
+
+         var largeInfowindow = new google.maps.InfoWindow();
+         var bounds = new google.maps.LatLngBounds();
+         // The Following group uses the location array to create an array of markers on initialize.
+         for (var i = 0; i < locations.length; i++) {
+            // Get the position from the location array.
+            var position = locations[i].location;
+            var title = locations[i].title;
+            // Create a marker per location, and put into markers array.
+            var marker = new google.maps.Marker({
+               map: map,
+               position: position,
+               title: title,
+               animation: google.maps.Animation.DROP,
+               id: i
+            });
+            // Push the marker to our array of markers.
+            markers.push(marker);
+            // Extend the boundaries of the map for each marker
+            bounds.extend(marker.position);
+            // Create onclick event to open an infowindow at each marker.
+            marker.addListener('click', function(){
+               populateInfoWindow(this, largeInfowindow);
+            });
+         }
+         map.fitBounds(bounds);
+      }
+         // This function populates the infowindow when the markers is clicked. We'll only allow
+         // one infowindow which will open at the marker that is clicked, and populate based
+         // on the marker position.
+         function populateInfoWindow(marker, infowindow){
+            // Check to make sure the infowindow is not already openend on this marker.
+            if (infowindow.marker != marker){
+               infowindow.marker = marker;
+               infowindow.setContent('<div>' + marker.title + '</div>');
+               infowindow.open(map, marker);
+               // Make sure the marker property is cleared if the infowindow is closed.
+               infowindow.addListener('closeclick', function(){
+                  infowindow.setMarker(null);
+               });
+            }
+         }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5KW6HFcz2EruvieribkbhWCs32nkTAwU&callback=initMap">
+   </script>
+</body>
+</html>
