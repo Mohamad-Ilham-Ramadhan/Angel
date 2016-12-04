@@ -1,2 +1,2 @@
 # Angel
-Just train
+Just exercise
